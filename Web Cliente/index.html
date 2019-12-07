@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="imagenes/logo_ayto.ico" type="image/x-icon">
+    <title>Ayuntamiento Olivares</title> <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Cookie CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    <style>
+        body {
+            font-family: Verdana, "Trebuchet MS", Arial, sans-serif;
+            background-color: #dcffcc;
+        }
+
+        .cabecera {
+            /* Asignamos una altura mínima */
+            min-height: 45vh;
+            max-width: 100%;
+            background-image: url('imagenes/cabecera_plaza2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cabecera h1 {
+            font-size:42px;
+            margin-top: 12vh;
+            margin-left: 28%;
+            text-shadow: 3px 3px 3px white,
+                5px 5px 5px white,
+                7px 7px 7px white;
+        }
+
+        .well{
+            background-color: #dfddc7;
+            font-size: medium;
+        }
+
+        h4{
+            font-size: medium;
+        }
+
+        section{
+            margin-left: 15vw;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        h4{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        #github{
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 600px){
+            .cabecera h1 {
+                margin-top: 8vh;
+                font-size: 18px;
+                margin-left: 20%;
+            }
+
+            .well{                
+                font-size: small;
+            }
+
+            h4{
+                font-size: small;
+            }
+
+            #carrusel{
+                margin-left: 5vw;
+            }
+
+            .noticia-img {
+                margin-right: 20px;
+            }
+
+            #github{
+                width: 20px;
+                height: 20px;
+            }
+            
+        }
+
+        @media only screen and (min-device-width : 968px){
+
+            #carrusel{
+                margin-right: 25vw;
+            }
+        }
+
+        @media only screen and (min-device-width : 968px){
+
+            #carrusel{
+                margin-left: 30vw;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <diw class="row">
+        <header class="cabecera col-12">
+            <h1>Ayuntamiento de Olivares <img src="imagenes/logo_ayto.ico" alt="logo_ayuntamiento"></h1>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <diw class="col-12">
+                    <!-- Inicio Menú (componente navbar)  -->
+                    <nav
+                        class="row navbar navbar-expand-lg navbar-light bg-success border border-left-0 border-right-0 border-dark">
+                        <a class="navbar-brand" href="index.html"><img class="img-fluid navbar-brand"
+                                src="imagenes/logo_ayto.ico" alt="logo_ayto">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon col-md-1"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Eventos
+                                    </a>
+                                    <!-- Componente Dropdown -->
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                                            title="Eventos Culturales" href="eventos_culturales.html">Eventos Culturales</a>
+                                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                                            title="Eventos Deportivos" href="eventos_deportivos.html">Eventos Deportivos</a>
+                                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                                            title="Calendario Eventos" href="calendario_eventos.html">Calendario Eventos</a>
+                                    </div>
+                                </li>
+
+                                
+                                <li class="nav-item">
+                                        <a class="nav-link" href="noticias.html">Noticias</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="localizacion.html">Localización</a>
+                                    </li>
+                            </ul>
+                            <!-- Componente Form -->
+                            <form class="form-inline">
+
+                                    <div class="input-group">
+    
+                                        <input type="text" class="form-control " placeholder="¿Qué quieres buscar?">
+    
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+    
+                                    </div>
+    
+                                </form>
+                        </div>
+                    </nav>
+                    <!-- Fin Menú -->
+                </div>
+            </div>
+        </div>
+    <!-- Fin row header -->
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+                <div id="carrusel" class="carousel slide mt-5 mb-5" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carrusel" data-slide-to="1"></li>
+                            <li data-target="#carrusel" data-slide-to="2"></li>
+                        </ul>
+                
+                        <!-- Componente Carrusel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                    <img class="img-fluid" src="imagenes/agenda_navideña.jpg" alt="Agenda Navideña">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <div class="carousel-caption">
+                                                <!-- Elemento Tooltip -->
+                                                <a class="btn btn-lg btn-primary" href="#" data-toggle="tooltip" data-placement="bottom" 
+                                                title="AGENDA NAVIDEÑA 2019 - AYUNTAMIENTO DE OLIVARES">
+                                                Leer Más</a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                            </div>
+                            <div class="carousel-item">
+                                    <img class="img-fluid" src="imagenes/premio_jovenes.jpg" alt="Premio Jovenes">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <!-- Elemento Tooltip -->
+                                            <a class="btn btn-lg btn-primary" href="#" data-toggle="tooltip" data-placement="bottom" 
+                                            title="JÓVENES DE OLIVARES RECOGEN LOS PREMIOS OTORGADOS POR LA JUNTA DE ANDALUCÍA CON MOTIVO DEL DÍA MUNDIAL DE LA LUCHA CONTRA EL SIDA">
+                                            Leer Más</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                    <img class="img-fluid" src="imagenes/teatro.jpg" alt="TEATRO FAMILIAR: HUMOR, CIRCO Y MÚSICA CON LA BANDA DE OTRO">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <div class="carousel-caption">
+                                                <div class="carousel-caption">
+                                                    <!-- Elemento Tooltip -->
+                                                    <a class="btn btn-lg btn-primary" href="#" data-toggle="tooltip" data-placement="bottom" 
+                                                    title="AGENDA NAVIDEÑA 2019 - AYUNTAMIENTO DE OLIVARES">
+                                                    Leer Más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                
+                        <!-- Controles izquierda (atrás) y derecha (adelante) -->
+                        <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carrusel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                </div>
+
+        </div>
+    </div>
+
+    <!-- Section con las noticias -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+                
+                <section class="bg-light mb-5">
+                    <!-- Componente Wells (añade un borde redondeado alrededor de un elemento con un color de fondo y algo de relleno) -->
+                    <div class="well shadow text-primary p-3 rounded mb-4">NOTICIAS</div>
+                    <div class="row">
+                        <div class="col-10">
+                            <article class="noticia m-4 clear-fix">
+                                <h4 class="mb-3">ENTREGA DE LA RECAUDACIÓN DEL TORNEO BENÉFICO DE PADEL A LA ASOCIACIÓN CONTRA EL CANCER DE OLIVARES</h4>
+                                <div class="clearfix">
+                                        <img class="noticia-img img-fluid img-thumbnail float-left mr-4" src="/imagenes/recaudacion.jpg" alt="Recaudación Padel">
+                                        <p><small><span class="text-primary">03/12/2019</span>
+                                        <br>Por tercera vez se ha desarrollado el Torneo benéfico en el municipio.</small></p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                            <article class="noticia m-4">
+                                <h4 class="mb-3">VUELVE LA NAVIDAD MÁGICA A OLIVARES</h4>
+                                <div class="clearfix">
+                                        <img class="noticia-img img-fluid img-thumbnail float-left mr-4" src="/imagenes/pista_patinaje.jpg" alt="Pista Patinaje">
+                                        <p><small><span class="text-primary">02/12/2019</span><br>Por tercera vez se ha desarrollado el Torneo benéfico en el municipio.</small></p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-10">
+                            <article class="noticia m-4">
+                                <h4 class="mb-3">EL MERCADO BARROCO 2020 SE CELEBRARÁ DURANTE LOS DÍAS 14 AL 17 DE MAYO</h4>
+                                <div class="clearfix">
+                                    <img class="noticia-img img-fluid img-thumbnail float-left mr-4 mb-xs-2 mb-lg-5" src="/imagenes/barroco.jpg" alt="Mercado Barroco 2020">
+                                    <p><small><span class="text-primary">29/11/2019</span><br>Por tercera vez se ha desarrollado el Torneo benéfico en el municipio.</small></p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert alert-success text-center cookiealert cookiealert-" role="alert">
+            &#x1F36A; Esta página usa cookies para garantizar una mejor experiencia al usuario <a
+                href="https://www.hesperide.es/cookies.php" class="alert-link" target="_blank">Aprende más</a>
+    
+            <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+                Acepto
+            </button>
+        </div>    
+        <!-- END Bootstrap-Cookie-Alert -->
+    
+        <!-- Inicio Footer -->
+
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                
+                    
+            </div>
+        </div>
+        <div class='row'>
+                <div class='span12'>
+                   <div class='footer'>
+                        <div class="text-center py-3 bg-success">© 2019 Ángel Guerrero Marín
+                                <a href="https://github.com/wondo1996"><img src="imagenes/github.png" id="github"
+                                class="img-fluid float-right mr-4 mt-2" alt="GitHub"></a></p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        <!-- Fin Footer -->  
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+</body>
+
+</html>
